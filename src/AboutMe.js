@@ -12,6 +12,8 @@ import DevelopmentSkillCards from './DevelopmentSkillCards';
 function AboutMe() {
     const elementsRef = useRef([]);
 
+    const [firstLoaded, setFirstLoaded] = useState(true);
+
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -32,6 +34,7 @@ function AboutMe() {
             observer.disconnect();
         };
     }, []);
+
 
     const projectsImpact = [
         {
@@ -135,7 +138,12 @@ function AboutMe() {
     ];
 
     return (
-        <div className={styles.App} onLoad={() => window.scroll({ left: 0, top: 270, behavior:"smooth"})}>
+        <div className={styles.App} onLoad={() => {
+            if(firstLoaded){
+                window.scroll({ left: 0, top: 270, behavior:"smooth"})
+                setFirstLoaded(false);
+            }
+        }}>
             <div className={styles.banner}>
                 <div className={styles.imageConatiner}>
                     <img src={process.env.PUBLIC_URL + "/banner.jpg"} alt="Banner" className={styles.bannerImage} />
