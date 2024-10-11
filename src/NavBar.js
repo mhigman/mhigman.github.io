@@ -4,11 +4,16 @@ import { useLocation } from 'react-router-dom';
 
 const NavBar = () => {
     const location = useLocation().pathname;
-    return (
     
+    return (<>
+        <div className={styles.logoContainer}>
+                <a href='/'>
+                    <img src={process.env.PUBLIC_URL + "/favicon.ico"} alt="Logo" className={styles.logo} />
+                </a>
+        </div>
         <header className={styles.header}>
             
-            <nav className={styles.nav}>
+            {/*<nav className={styles.nav}>
                 <ul className={styles.navList}>
                     <li>
                         <div className={location === '/' ? styles.selectedNavImage : styles.navImage}>
@@ -27,10 +32,11 @@ const NavBar = () => {
                         <a href="https://github.com/mhigman/Personal-Project-Hub" className={location.startsWith('/repo') ? styles.selectedNavLink : styles.navLink}>Project Files</a>
                     </li>
                 </ul>
-            </nav>
+            </nav>*/}
+            <p className={styles.filler}> </p>
         </header>
+        </>
     );
 }
 
 export default NavBar;
-            

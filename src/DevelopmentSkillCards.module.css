@@ -5,21 +5,40 @@
     justify-content: center;
     padding: 20px;
   }
-  
   .skillCard {
-    background-color: #70b0ba;
-    color: #2c3e50;
-    padding: 10px 20px;
+    /*border: 1px solid #ccc; /* Neutral border to give a defined card-like look */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
-    font-weight: bold;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
     text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .skillCard:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
+    margin: 10px;
+    font-size: 1.2rem;
+
+}
+
+
+.skillCard h3 {
+    font-size: 1.2rem;
+    color: #2c3e50; /* Dark color for the text */
+    margin-bottom: 10px;
+}
+
+.skillCard p {
+    font-size: 3rem;
+    color: #609aa3;
+    margin: 0;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skillsTitle {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}

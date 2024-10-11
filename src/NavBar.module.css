@@ -1,11 +1,38 @@
-
-
 .header {
-    color: #eaeaea;
-    position: absolute;
-    top: 20px;
+    color: #ededed;
+    position: fixed; /* Stick to the top of the page */
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: left;
+    background-color: #ededed; /* Background color to prevent content showing through */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    padding: 10px 20px; /* Padding for spacing */
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center;
+}
+
+.filler {
+    min-height: 20px;
+}
+
+
+.logoContainer {
+    flex: 1; /* Take up space on the left */
+    position: fixed;
+    margin-left: 5px;
+    z-index: 1001;
+}
+
+.logo {
+    width: 75px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.navContainer {
+    flex: 2; /* Take up more space for centering the nav */
+    display: flex;
+    justify-content: center; /* Center the navigation links */
 }
 
 .nav {
@@ -16,6 +43,12 @@
     list-style: none;
     display: inline-flex;
     gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.filler {
+    width: 44%;
 }
 
 .selectedNavLink {
@@ -29,15 +62,14 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid #2c3e50;
+    border: 2px solid #1e431f;
     margin-right: auto;
     justify-self: left;
     margin-bottom: 20px;
-
 }
 
 .selectedNavImage {
-    background-color: #b3e6e6;
+    background-color: #86bd97;
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 5%;
