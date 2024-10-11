@@ -129,7 +129,7 @@ function AboutMe() {
             sourceLink: "https://github.com/mhigman/Personal-Project-Hub/tree/main/Client-Projects",
             children: (<>
                 <p>During my junior year, I completed multiple client projects for my professional studies class where I went above and beyond expectations, resulting in me and my team being invited to present at a corprate meeting for Walmart.</p>
-                <p>One of these client projects eventually allowed me to expand upon the idea that is the subject of my recently filed provisional patent.</p>
+                <p>One of these client projects eventually led me to expand upon the idea that is the subject of my recently filed provisional patent.</p>
                 <p>The code for some of these projects can be found in the 'Arvest-Client-Project' and 'Walmart-Data-Science' folders.</p>
             </>),
             darkImage: false
