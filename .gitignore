@@ -1,1 +1,10 @@
-node_modules
+# Dependencies and generated site output
+node_modules/
+build/
+
+# Local environment and test artifacts
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+coverage/
