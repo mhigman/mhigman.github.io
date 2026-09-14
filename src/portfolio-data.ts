@@ -26,6 +26,6 @@ export const projects: Project[] = [
   { title: 'SCARA Arm Controller', categories: ['Robotics'], date: '2023', summary: 'Brushless-motor controls for precise arm positioning in quantum-computing chip fabrication.', highlights: ['Tuned PID', 'CAN bus', 'Lower-cost motor integration'], link: `${projectHubUrl}/tree/main/University-of-Arkansas-SCARA-Code` },
 ];
 
-export const skills = ['Python', 'C/C++', 'MATLAB', 'KiCad', 'LTspice', 'Arduino', 'Analog design', 'Circuit prototyping', 'PCB bring-up', 'PID control', 'CAN bus', 'BLE / Serial'];
+export const skills = ['Python', 'C/C++', 'MATLAB', 'KiCad', 'LTspice', 'Arduino', 'Analog design', 'PID control', 'CAN bus', 'BLE & Serial'];
 
 export const contact = { email: 'milesbhigman@gmail.com', linkedin: 'https://www.linkedin.com/in/miles-higman/', github: 'https://github.com/mhigman' };
